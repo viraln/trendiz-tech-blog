@@ -1,0 +1,350 @@
+[2025-03-20T11:30:51.751Z] [DEBUG] Command line arguments: {
+  "random": true,
+  "count": "3",
+  "force": true
+}
+[2025-03-20T11:30:51.752Z] [INFO] Loading topics from data/topics.js
+[2025-03-20T11:30:51.756Z] [SUCCESS] Loaded 399 topics from 37 categories
+[2025-03-20T11:30:51.756Z] [INFO] Starting batch processing of 3 topics with concurrency 1
+[2025-03-20T11:30:51.756Z] [INFO] Selected 3 random topics: DIY, STEM, Design
+[2025-03-20T11:30:51.757Z] [INFO] [1/3] Generating article for topic: DIY (Social & Lifestyle)
+[2025-03-20T11:30:51.817Z] [DEBUG] [DIY] API Key Manager: Loaded 3 Gemini API keys
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] API Key Manager: Loaded 2 Unsplash API keys
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] [44m[37m[1m START: Script Execution [0m
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:51.817Z][0m [34mℹ Starting article generation script with Gemini model: gemini-1.5-flash[0m
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:51.817Z][0m [34mℹ Topic: DIY[0m
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] [44m[37m[1m START: Article Generation [0m
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:51.818Z][0m [34mℹ Generating article for topic: "DIY"[0m
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] Generating a title for: DIY
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:51.818Z][0m [32m✓ Generated title: "DIY Explained: Everything You Need to Know"[0m
+[2025-03-20T11:30:51.818Z] [DEBUG] [DIY] Generated title: DIY Explained: Everything You Need to Know
+[2025-03-20T11:30:51.819Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:51.818Z][0m [34mℹ Generated slug: "diy-explained-everything-you-need-to-know"[0m
+[2025-03-20T11:30:53.085Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:53.085Z][0m [36m⏱ keyword-generation: 1.3s[0m
+[2025-03-20T11:30:53.085Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:53.085Z][0m [34mℹ Generated keywords: diy projects, easy diy crafts, diy home decor ideas, how to diy, best diy gifts, diy home improvement projects, cheap diy projects, diy for beginners, learn diy skills, where to buy diy supplies[0m
+[2025-03-20T11:30:53.085Z] [DEBUG] [DIY] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T11:30:53.085Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:53.085Z][0m [34mℹ Searching for featured image with terms: "DIY"[0m
+[2025-03-20T11:30:53.600Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:53.600Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1595814433015-e6f5ce69614e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwxfHxESVl8ZW58MHx8fHwxNzQyNDcwMjUzfDA&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T11:30:53.600Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:53.600Z][0m [36m⏱ featured-image: 515ms[0m
+[2025-03-20T11:30:53.600Z] [DEBUG] [DIY] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T11:30:53.601Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:53.600Z][0m [34mℹ Generating categories...[0m
+[2025-03-20T11:30:54.573Z] [DEBUG] [DIY] Categories text from Gemini: ```json
+[2025-03-20T11:30:54.573Z] [DEBUG] [DIY] ["Home Improvement", "Furniture Making", "Woodworking", "Chair Restoration"]
+[2025-03-20T11:30:54.573Z] [DEBUG] [DIY] ```
+[2025-03-20T11:30:54.574Z] [DEBUG] [DIY] Parsed categories array: [
+[2025-03-20T11:30:54.575Z] [DEBUG] [DIY] 'Woodworking',
+[2025-03-20T11:30:54.575Z] [DEBUG] [DIY] 'Home Improvement',
+[2025-03-20T11:30:54.575Z] [DEBUG] [DIY] 'Furniture Making',
+[2025-03-20T11:30:54.575Z] [DEBUG] [DIY] 'Chair Restoration'
+[2025-03-20T11:30:54.575Z] [DEBUG] [DIY] ]
+[2025-03-20T11:30:54.575Z] [DEBUG] [DIY] [2m[2025-03-20T11:30:54.574Z][0m [34mℹ Sending request to Gemini API...[0m
+[2025-03-20T11:31:05.516Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.509Z][0m [32m✓ Generated content: 7883 characters[0m
+[2025-03-20T11:31:05.991Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.991Z][0m [32m✓ Successfully retrieved 10 Unsplash images for topic: DIY[0m
+[2025-03-20T11:31:05.991Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.991Z][0m [34mℹ Added 4 images to the article content[0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [34mℹ Estimated reading time: 6 minutes[0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [34mℹ Validating article content quality...[0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [44m[37m[1m START: Content Validation [0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [33m⚠ Content is shorter than ideal (1136 words). Aim for 1500-2500 words for comprehensive coverage.[0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [32m✓ Section count is good: 10 sections[0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [33m⚠ Content has too few images (0). Need at least 3.[0m
+[2025-03-20T11:31:05.996Z] [DEBUG] [DIY] [44m[37m[1m END: Content Validation [0m
+[2025-03-20T11:31:05.997Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [34mℹ Searching for images for the article...[0m
+[2025-03-20T11:31:05.997Z] [DEBUG] [DIY] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T11:31:05.997Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [34mℹ Searching for featured image with diy projects, easy diy crafts, diy home decor ideas...[0m
+[2025-03-20T11:31:05.997Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:05.996Z][0m [34mℹ Searching for featured image with terms: "DIY"[0m
+[2025-03-20T11:31:06.048Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.048Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1522065893269-6fd20f6d7438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwyfHxESVl8ZW58MHx8fHwxNzQyNDcwMjUzfDA&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T11:31:06.048Z] [DEBUG] [DIY] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T11:31:06.048Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.048Z][0m [36m⏱ featured-image: 52ms[0m
+[2025-03-20T11:31:06.230Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.230Z][0m [34mℹ Replaced 0 placeholder images with actual images from Unsplash[0m
+[2025-03-20T11:31:06.243Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.243Z][0m [32m✓ Article saved to: /Users/saar/Desktop/Development/Trendiz - V2 - New/content/articles/2025-03-20T11:31:06.230Z-diy-explained-everything-you-need-to-know.md[0m
+[2025-03-20T11:31:06.246Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.243Z][0m [36m⏱ total-generation: 14.4s[0m
+[2025-03-20T11:31:06.247Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.244Z][0m [32m✓ Article generated successfully with Gemini in 14.43s[0m
+[2025-03-20T11:31:06.247Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.244Z][0m [34mℹ Title: DIY Explained: Everything You Need to Know[0m
+[2025-03-20T11:31:06.247Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.244Z][0m [34mℹ Keywords: diy projects, easy diy crafts, diy home decor ideas, how to diy, best diy gifts, diy home improvement projects, cheap diy projects, diy for beginners, learn diy skills, where to buy diy supplies[0m
+[2025-03-20T11:31:06.248Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.244Z][0m [34mℹ Social Snippet: "Did you know the global DIY market is projected to exceed $800 billion by 2027?  It's time to unleash your inner maker and join the growing DIY revolution!"[0m
+[2025-03-20T11:31:06.247Z] [DEBUG] [DIY] [2m[2025-03-20T11:31:06.244Z][0m [34mℹ Filename: 2025-03-20T11:31:06.230Z-diy-explained-everything-you-need-to-know.md[0m
+[2025-03-20T11:31:06.270Z] [SUCCESS] [1/3] Article generation successful for "DIY" in 14.5s
+[2025-03-20T11:31:06.270Z] [INFO] Rate limiting: waiting 2s before next batch...
+[2025-03-20T11:31:08.272Z] [INFO] [2/3] Generating article for topic: STEM (Science & Education)
+[2025-03-20T11:31:08.347Z] [DEBUG] [STEM] API Key Manager: Loaded 3 Gemini API keys
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [44m[37m[1m START: Article Generation [0m
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:08.347Z][0m [34mℹ Topic: STEM[0m
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:08.347Z][0m [34mℹ Generating article for topic: "STEM"[0m
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] Generated title: Why STEM Matters More Than Ever
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] Generating a title for: STEM
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] API Key Manager: Loaded 2 Unsplash API keys
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [44m[37m[1m START: Script Execution [0m
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:08.347Z][0m [34mℹ Starting article generation script with Gemini model: gemini-1.5-flash[0m
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:08.348Z][0m [32m✓ Generated title: "Why STEM Matters More Than Ever"[0m
+[2025-03-20T11:31:08.348Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:08.348Z][0m [34mℹ Generated slug: "why-stem-matters-more-than-ever"[0m
+[2025-03-20T11:31:09.516Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:09.512Z][0m [36m⏱ keyword-generation: 1.2s[0m
+[2025-03-20T11:31:09.516Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:09.512Z][0m [34mℹ Generated keywords: STEM careers, STEM education, STEM jobs, what is STEM?, STEM for kids, best STEM toys, STEM scholarships, STEM curriculum, online STEM courses, STEM degree programs[0m
+[2025-03-20T11:31:09.516Z] [DEBUG] [STEM] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T11:31:09.516Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:09.512Z][0m [34mℹ Searching for featured image with terms: "STEM"[0m
+[2025-03-20T11:31:09.922Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:09.921Z][0m [36m⏱ featured-image: 409ms[0m
+[2025-03-20T11:31:09.923Z] [DEBUG] [STEM] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T11:31:09.923Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:09.921Z][0m [34mℹ Generating categories...[0m
+[2025-03-20T11:31:09.922Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:09.920Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1529474442011-348684a7cd13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHw0fHxTVEVNfGVufDB8fHx8MTc0MjQ3MDI2OXww&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T11:31:10.636Z] [DEBUG] [STEM] Categories text from Gemini: ```json
+[2025-03-20T11:31:10.636Z] [DEBUG] [STEM] ["Engineering", "Robotics", "Automation", "AI-powered Robotics"]
+[2025-03-20T11:31:10.636Z] [DEBUG] [STEM] ```
+[2025-03-20T11:31:10.652Z] [DEBUG] [STEM] Parsed categories array: [ 'Engineering', 'Robotics', 'Automation', 'AI-powered Robotics' ]
+[2025-03-20T11:31:10.652Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:10.652Z][0m [34mℹ Sending request to Gemini API...[0m
+[2025-03-20T11:31:19.336Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.333Z][0m [32m✓ Generated content: 6901 characters[0m
+[2025-03-20T11:31:19.779Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.777Z][0m [32m✓ Successfully retrieved 10 Unsplash images for topic: STEM[0m
+[2025-03-20T11:31:19.780Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.779Z][0m [34mℹ Added 3 images to the article content[0m
+[2025-03-20T11:31:19.782Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.782Z][0m [34mℹ Estimated reading time: 5 minutes[0m
+[2025-03-20T11:31:19.786Z] [DEBUG] [STEM] [44m[37m[1m START: Content Validation [0m
+[2025-03-20T11:31:19.793Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.784Z][0m [34mℹ Validating article content quality...[0m
+[2025-03-20T11:31:19.793Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.785Z][0m [33m⚠ Content is shorter than ideal (930 words). Aim for 1500-2500 words for comprehensive coverage.[0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.797Z][0m [32m✓ Section count is good: 8 sections[0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [44m[37m[1m END: Content Validation [0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.798Z][0m [34mℹ Searching for images for the article...[0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.798Z][0m [34mℹ Searching for featured image with STEM careers, STEM education, STEM jobs...[0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.798Z][0m [34mℹ Searching for featured image with terms: "STEM"[0m
+[2025-03-20T11:31:19.800Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.798Z][0m [33m⚠ Content has too few images (0). Need at least 3.[0m
+[2025-03-20T11:31:19.873Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.873Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1597554735785-35e75e63e70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHw1fHxTVEVNfGVufDB8fHx8MTc0MjQ3MDI2OXww&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T11:31:19.880Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:19.873Z][0m [36m⏱ featured-image: 75ms[0m
+[2025-03-20T11:31:19.880Z] [DEBUG] [STEM] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T11:31:20.097Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.096Z][0m [34mℹ Replaced 0 placeholder images with actual images from Unsplash[0m
+[2025-03-20T11:31:20.106Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [32m✓ Article saved to: /Users/saar/Desktop/Development/Trendiz - V2 - New/content/articles/2025-03-20T11:31:20.097Z-why-stem-matters-more-than-ever.md[0m
+[2025-03-20T11:31:20.106Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [36m⏱ total-generation: 11.8s[0m
+[2025-03-20T11:31:20.106Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [34mℹ Title: Why STEM Matters More Than Ever[0m
+[2025-03-20T11:31:20.106Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [32m✓ Article generated successfully with Gemini in 11.76s[0m
+[2025-03-20T11:31:20.106Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [34mℹ Filename: 2025-03-20T11:31:20.097Z-why-stem-matters-more-than-ever.md[0m
+[2025-03-20T11:31:20.107Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [34mℹ Keywords: STEM careers, STEM education, STEM jobs, what is STEM?, STEM for kids, best STEM toys, STEM scholarships, STEM curriculum, online STEM courses, STEM degree programs[0m
+[2025-03-20T11:31:20.107Z] [DEBUG] [STEM] [2m[2025-03-20T11:31:20.106Z][0m [34mℹ Social Snippet: "Did you know that STEM jobs are projected to grow exponentially in the next decade?  It's not just about technology; it's about solving the world's biggest challenges."[0m
+[2025-03-20T11:31:20.184Z] [SUCCESS] [2/3] Article generation successful for "STEM" in 11.9s
+[2025-03-20T11:31:20.185Z] [INFO] Rate limiting: waiting 2s before next batch...
+[2025-03-20T11:31:22.238Z] [INFO] [3/3] Generating article for topic: Design (Social & Lifestyle)
+[2025-03-20T11:31:22.365Z] [DEBUG] [Design] API Key Manager: Loaded 3 Gemini API keys
+[2025-03-20T11:31:22.365Z] [DEBUG] [Design] API Key Manager: Loaded 2 Unsplash API keys
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] [44m[37m[1m START: Script Execution [0m
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] [2m[2025-03-20T11:31:22.365Z][0m [34mℹ Starting article generation script with Gemini model: gemini-1.5-flash[0m
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] [2m[2025-03-20T11:31:22.366Z][0m [34mℹ Topic: Design[0m
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] [2m[2025-03-20T11:31:22.366Z][0m [34mℹ Generating article for topic: "Design"[0m
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] [44m[37m[1m START: Article Generation [0m
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] Generating a title for: Design
+[2025-03-20T11:31:22.366Z] [DEBUG] [Design] Generated title: Design
+[2025-03-20T11:31:22.367Z] [DEBUG] [Design] [2m[2025-03-20T11:31:22.367Z][0m [32m✓ Generated title: "Design"[0m
+[2025-03-20T11:31:22.367Z] [DEBUG] [Design] [2m[2025-03-20T11:31:22.367Z][0m [34mℹ Generated slug: "design"[0m
+[2025-03-20T11:31:23.475Z] [DEBUG] [Design] [2m[2025-03-20T11:31:23.475Z][0m [36m⏱ keyword-generation: 1.1s[0m
+[2025-03-20T11:31:23.475Z] [DEBUG] [Design] [2m[2025-03-20T11:31:23.475Z][0m [34mℹ Generated keywords: graphic design, web design, design principles, best design software, interior design ideas, learn graphic design online, affordable web design services, UI UX design course, design portfolio examples, how to become a designer[0m
+[2025-03-20T11:31:23.475Z] [DEBUG] [Design] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T11:31:23.475Z] [DEBUG] [Design] [2m[2025-03-20T11:31:23.475Z][0m [34mℹ Searching for featured image with terms: "Design"[0m
+[2025-03-20T11:31:23.842Z] [DEBUG] [Design] [2m[2025-03-20T11:31:23.840Z][0m [36m⏱ featured-image: 365ms[0m
+[2025-03-20T11:31:23.842Z] [DEBUG] [Design] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T11:31:23.842Z] [DEBUG] [Design] [2m[2025-03-20T11:31:23.841Z][0m [34mℹ Generating categories...[0m
+[2025-03-20T11:31:23.841Z] [DEBUG] [Design] [2m[2025-03-20T11:31:23.839Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHw0fHxEZXNpZ258ZW58MHx8fHwxNzQyNDcwMjgzfDA&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T11:31:24.543Z] [DEBUG] [Design] Categories text from Gemini: ```json
+[2025-03-20T11:31:24.543Z] [DEBUG] [Design] ["Technology", "User Experience", "Interaction Design", "Microinteractions"]
+[2025-03-20T11:31:24.543Z] [DEBUG] [Design] ```
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] Parsed categories array: [
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] 'Technology',
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] 'User Experience',
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] 'Interaction Design',
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] ]
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] 'Microinteractions'
+[2025-03-20T11:31:24.545Z] [DEBUG] [Design] [2m[2025-03-20T11:31:24.545Z][0m [34mℹ Sending request to Gemini API...[0m
+[2025-03-20T11:31:35.427Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.422Z][0m [32m✓ Generated content: 8584 characters[0m
+[2025-03-20T11:31:35.774Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.773Z][0m [32m✓ Successfully retrieved 10 Unsplash images for topic: Design[0m
+[2025-03-20T11:31:35.776Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.776Z][0m [34mℹ Added 4 images to the article content[0m
+[2025-03-20T11:31:35.778Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.778Z][0m [34mℹ Estimated reading time: 6 minutes[0m
+[2025-03-20T11:31:35.778Z] [DEBUG] [Design] [44m[37m[1m START: Content Validation [0m
+[2025-03-20T11:31:35.778Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.778Z][0m [34mℹ Validating article content quality...[0m
+[2025-03-20T11:31:35.778Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.778Z][0m [33m⚠ Content is shorter than ideal (1114 words). Aim for 1500-2500 words for comprehensive coverage.[0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.778Z][0m [32m✓ Section count is good: 9 sections[0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.779Z][0m [33m⚠ Content has too few images (0). Need at least 3.[0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [44m[37m[1m END: Content Validation [0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.779Z][0m [34mℹ Searching for images for the article...[0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.779Z][0m [34mℹ Searching for featured image with graphic design, web design, design principles...[0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T11:31:35.779Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.779Z][0m [34mℹ Searching for featured image with terms: "Design"[0m
+[2025-03-20T11:31:35.830Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.830Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHw0fHxEZXNpZ258ZW58MHx8fHwxNzQyNDcwMjgzfDA&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T11:31:35.830Z] [DEBUG] [Design] [2m[2025-03-20T11:31:35.830Z][0m [36m⏱ featured-image: 51ms[0m
+[2025-03-20T11:31:35.831Z] [DEBUG] [Design] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T11:31:36.011Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.011Z][0m [34mℹ Replaced 0 placeholder images with actual images from Unsplash[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [32m✓ Article saved to: /Users/saar/Desktop/Development/Trendiz - V2 - New/content/articles/2025-03-20T11:31:36.011Z-design.md[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [32m✓ Article generated successfully with Gemini in 13.65s[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [34mℹ Keywords: graphic design, web design, design principles, best design software, interior design ideas, learn graphic design online, affordable web design services, UI UX design course, design portfolio examples, how to become a designer[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [34mℹ Social Snippet: "In 2025, design isn't just about aesthetics; it's the language of innovation, shaping how we interact with the world in profound ways."[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [36m⏱ total-generation: 13.6s[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [34mℹ Title: Design[0m
+[2025-03-20T11:31:36.012Z] [DEBUG] [Design] [2m[2025-03-20T11:31:36.012Z][0m [34mℹ Filename: 2025-03-20T11:31:36.011Z-design.md[0m
+[2025-03-20T11:31:36.023Z] [SUCCESS] [3/3] Article generation successful for "Design" in 13.8s
+[2025-03-20T11:31:36.025Z] [INFO] Results saved to /Users/saar/Desktop/Development/Trendiz - V2 - New/logs/generation-results-2025-03-20.json
+[2025-03-20T14:41:59.054Z] [DEBUG] Command line arguments: {
+  "random": true,
+  "count": "3",
+  "force": true
+}
+[2025-03-20T14:41:59.054Z] [INFO] Loading topics from data/topics.js
+[2025-03-20T14:41:59.058Z] [SUCCESS] Loaded 399 topics from 37 categories
+[2025-03-20T14:41:59.058Z] [INFO] Starting batch processing of 3 topics with concurrency 1
+[2025-03-20T14:41:59.058Z] [INFO] [1/3] Generating article for topic: Extreme (Sports & Athletics)
+[2025-03-20T14:41:59.058Z] [INFO] Selected 3 random topics: Extreme, Testing, Music
+[2025-03-20T14:41:59.114Z] [DEBUG] [Extreme] API Key Manager: Loaded 3 Gemini API keys
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] API Key Manager: Loaded 2 Unsplash API keys
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] [44m[37m[1m START: Script Execution [0m
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] [2m[2025-03-20T14:41:59.114Z][0m [34mℹ Starting article generation script with Gemini model: gemini-1.5-flash[0m
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] [2m[2025-03-20T14:41:59.114Z][0m [34mℹ Topic: Extreme[0m
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] [44m[37m[1m START: Article Generation [0m
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] [2m[2025-03-20T14:41:59.115Z][0m [34mℹ Generating article for topic: "Extreme"[0m
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] Generating a title for: Extreme
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] Generated title: How Does Extreme Impact Our Future?
+[2025-03-20T14:41:59.115Z] [DEBUG] [Extreme] [2m[2025-03-20T14:41:59.115Z][0m [32m✓ Generated title: "How Does Extreme Impact Our Future?"[0m
+[2025-03-20T14:41:59.116Z] [DEBUG] [Extreme] [2m[2025-03-20T14:41:59.115Z][0m [34mℹ Generated slug: "how-does-extreme-impact-our-future"[0m
+[2025-03-20T14:42:00.298Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:00.295Z][0m [36m⏱ keyword-generation: 1.2s[0m
+[2025-03-20T14:42:00.300Z] [DEBUG] [Extreme] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T14:42:00.301Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:00.296Z][0m [34mℹ Searching for featured image with terms: "Extreme"[0m
+[2025-03-20T14:42:00.299Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:00.295Z][0m [34mℹ Generated keywords: extreme sports, extreme activities, extreme challenges, what is extreme, extreme sports near me, best extreme sports equipment, extreme sports safety tips, extreme vacation ideas, how to plan an extreme adventure, extreme sports training[0m
+[2025-03-20T14:42:00.688Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:00.688Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1543513960-bd9fe93f4fd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwyfHxFeHRyZW1lfGVufDB8fHx8MTc0MjQwNTI4Mnww&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T14:42:00.688Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:00.688Z][0m [36m⏱ featured-image: 392ms[0m
+[2025-03-20T14:42:00.688Z] [DEBUG] [Extreme] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T14:42:00.689Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:00.688Z][0m [34mℹ Generating categories...[0m
+[2025-03-20T14:42:01.938Z] [DEBUG] [Extreme] Categories text from Gemini: ```json
+[2025-03-20T14:42:01.938Z] [DEBUG] [Extreme] ```
+[2025-03-20T14:42:01.938Z] [DEBUG] [Extreme] ["Sports", "Endurance Sports", "Ultramarathons", "Desert Ultras"]
+[2025-03-20T14:42:01.939Z] [DEBUG] [Extreme] Parsed categories array: [ 'Sports', 'Endurance Sports', 'Ultramarathons', 'Desert Ultras' ]
+[2025-03-20T14:42:01.939Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:01.939Z][0m [34mℹ Sending request to Gemini API...[0m
+[2025-03-20T14:42:12.777Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:12.770Z][0m [32m✓ Generated content: 8579 characters[0m
+[2025-03-20T14:42:13.172Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.171Z][0m [32m✓ Successfully retrieved 10 Unsplash images for topic: Extreme[0m
+[2025-03-20T14:42:13.173Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.173Z][0m [34mℹ Added 4 images to the article content[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.173Z][0m [34mℹ Estimated reading time: 6 minutes[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [34mℹ Validating article content quality...[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [44m[37m[1m START: Content Validation [0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [33m⚠ Content is shorter than ideal (1195 words). Aim for 1500-2500 words for comprehensive coverage.[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [32m✓ Section count is good: 13 sections[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [44m[37m[1m END: Content Validation [0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [33m⚠ Content has too few images (0). Need at least 3.[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [34mℹ Searching for featured image with terms: "Extreme"[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [34mℹ Searching for images for the article...[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.174Z][0m [34mℹ Searching for featured image with extreme sports, extreme activities, extreme challenges...[0m
+[2025-03-20T14:42:13.174Z] [DEBUG] [Extreme] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T14:42:13.224Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.224Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1519021228607-ef6e4c22d821?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwxfHxFeHRyZW1lfGVufDB8fHx8MTc0MjQwNTI4Mnww&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T14:42:13.224Z] [DEBUG] [Extreme] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T14:42:13.224Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.224Z][0m [36m⏱ featured-image: 50ms[0m
+[2025-03-20T14:42:13.275Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.275Z][0m [34mℹ Replaced 0 placeholder images with actual images from Unsplash[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [32m✓ Article saved to: /Users/saar/Desktop/Development/Trendiz - V2 - New/content/articles/2025-03-20T14:42:13.275Z-how-does-extreme-impact-our-future.md[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [34mℹ Title: How Does Extreme Impact Our Future?[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [36m⏱ total-generation: 14.2s[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [34mℹ Filename: 2025-03-20T14:42:13.275Z-how-does-extreme-impact-our-future.md[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [34mℹ Social Snippet: "Pushing your limits in the extreme doesn't just conquer mountains; it forges resilience that shapes your entire life."[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [34mℹ Keywords: extreme sports, extreme activities, extreme challenges, what is extreme, extreme sports near me, best extreme sports equipment, extreme sports safety tips, extreme vacation ideas, how to plan an extreme adventure, extreme sports training[0m
+[2025-03-20T14:42:13.277Z] [DEBUG] [Extreme] [2m[2025-03-20T14:42:13.277Z][0m [32m✓ Article generated successfully with Gemini in 14.16s[0m
+[2025-03-20T14:42:13.287Z] [SUCCESS] [1/3] Article generation successful for "Extreme" in 14.2s
+[2025-03-20T14:42:13.287Z] [INFO] Rate limiting: waiting 2s before next batch...
+[2025-03-20T14:42:15.289Z] [INFO] [2/3] Generating article for topic: Testing (Development & Coding)
+[2025-03-20T14:42:15.361Z] [DEBUG] [Testing] API Key Manager: Loaded 3 Gemini API keys
+[2025-03-20T14:42:15.361Z] [DEBUG] [Testing] API Key Manager: Loaded 2 Unsplash API keys
+[2025-03-20T14:42:15.361Z] [DEBUG] [Testing] [44m[37m[1m START: Script Execution [0m
+[2025-03-20T14:42:15.362Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:15.361Z][0m [34mℹ Starting article generation script with Gemini model: gemini-1.5-flash[0m
+[2025-03-20T14:42:15.362Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:15.362Z][0m [34mℹ Topic: Testing[0m
+[2025-03-20T14:42:15.362Z] [DEBUG] [Testing] [44m[37m[1m START: Article Generation [0m
+[2025-03-20T14:42:15.362Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:15.362Z][0m [34mℹ Generating article for topic: "Testing"[0m
+[2025-03-20T14:42:15.362Z] [DEBUG] [Testing] Generating a title for: Testing
+[2025-03-20T14:42:15.362Z] [DEBUG] [Testing] Generated title: Why Testing Matters More Than Ever
+[2025-03-20T14:42:15.363Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:15.362Z][0m [32m✓ Generated title: "Why Testing Matters More Than Ever"[0m
+[2025-03-20T14:42:15.363Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:15.363Z][0m [34mℹ Generated slug: "why-testing-matters-more-than-ever"[0m
+[2025-03-20T14:42:16.421Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:16.420Z][0m [36m⏱ keyword-generation: 1.1s[0m
+[2025-03-20T14:42:16.421Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:16.421Z][0m [34mℹ Generated keywords: software testing, types of software testing, test automation, performance testing, best testing tools, software testing tutorial, how to write test cases, mobile app testing, load testing services, automated testing frameworks[0m
+[2025-03-20T14:42:16.422Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:16.422Z][0m [34mℹ Searching for featured image with terms: "Testing"[0m
+[2025-03-20T14:42:16.421Z] [DEBUG] [Testing] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T14:42:16.636Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:16.635Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1518349619113-03114f06ac3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwxfHxUZXN0aW5nfGVufDB8fHx8MTc0MjQwNjE5NXww&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T14:42:16.636Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:16.636Z][0m [36m⏱ featured-image: 214ms[0m
+[2025-03-20T14:42:16.636Z] [DEBUG] [Testing] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T14:42:16.636Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:16.636Z][0m [34mℹ Generating categories...[0m
+[2025-03-20T14:42:17.596Z] [DEBUG] [Testing] ["Engineering", "Software Development", "Quality Assurance", "Automated Testing"]
+[2025-03-20T14:42:17.596Z] [DEBUG] [Testing] Categories text from Gemini: ```json
+[2025-03-20T14:42:17.596Z] [DEBUG] [Testing] ```
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] 'Engineering',
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] 'Automated Testing'
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] ]
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] Parsed categories array: [
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] 'Software Development',
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] 'Quality Assurance',
+[2025-03-20T14:42:17.597Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:17.597Z][0m [34mℹ Sending request to Gemini API...[0m
+[2025-03-20T14:42:29.479Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:29.477Z][0m [32m✓ Generated content: 8971 characters[0m
+[2025-03-20T14:42:29.944Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:29.944Z][0m [32m✓ Successfully retrieved 10 Unsplash images for topic: Testing[0m
+[2025-03-20T14:42:29.950Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:29.950Z][0m [34mℹ Added 3 images to the article content[0m
+[2025-03-20T14:42:29.956Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:29.951Z][0m [34mℹ Estimated reading time: 7 minutes[0m
+[2025-03-20T14:42:29.961Z] [DEBUG] [Testing] [44m[37m[1m START: Content Validation [0m
+[2025-03-20T14:42:29.964Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:29.958Z][0m [34mℹ Validating article content quality...[0m
+[2025-03-20T14:42:30.045Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.043Z][0m [33m⚠ Content is shorter than ideal (1226 words). Aim for 1500-2500 words for comprehensive coverage.[0m
+[2025-03-20T14:42:30.056Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.044Z][0m [32m✓ Section count is good: 11 sections[0m
+[2025-03-20T14:42:30.056Z] [DEBUG] [Testing] [44m[37m[1m END: Content Validation [0m
+[2025-03-20T14:42:30.057Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.044Z][0m [34mℹ Searching for images for the article...[0m
+[2025-03-20T14:42:30.056Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.044Z][0m [33m⚠ Content has too few images (0). Need at least 3.[0m
+[2025-03-20T14:42:30.057Z] [DEBUG] [Testing] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T14:42:30.057Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.044Z][0m [34mℹ Searching for featured image with terms: "Testing"[0m
+[2025-03-20T14:42:30.057Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.044Z][0m [34mℹ Searching for featured image with software testing, types of software testing, test automation...[0m
+[2025-03-20T14:42:30.174Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.173Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1577760258779-e787a1733016?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHw1fHxUZXN0aW5nfGVufDB8fHx8MTc0MjQwNjE5NXww&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T14:42:30.175Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.174Z][0m [36m⏱ featured-image: 130ms[0m
+[2025-03-20T14:42:30.177Z] [DEBUG] [Testing] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T14:42:30.275Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.268Z][0m [34mℹ Replaced 0 placeholder images with actual images from Unsplash[0m
+[2025-03-20T14:42:30.336Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.325Z][0m [32m✓ Article generated successfully with Gemini in 14.96s[0m
+[2025-03-20T14:42:30.336Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.325Z][0m [34mℹ Title: Why Testing Matters More Than Ever[0m
+[2025-03-20T14:42:30.336Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.325Z][0m [34mℹ Filename: 2025-03-20T14:42:30.272Z-why-testing-matters-more-than-ever.md[0m
+[2025-03-20T14:42:30.336Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.325Z][0m [34mℹ Social Snippet: "In 2025, software testing isn't just about finding bugs; it's about ensuring the safety, security, and reliability of the digital world we inhabit."[0m
+[2025-03-20T14:42:30.336Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.325Z][0m [34mℹ Keywords: software testing, types of software testing, test automation, performance testing, best testing tools, software testing tutorial, how to write test cases, mobile app testing, load testing services, automated testing frameworks[0m
+[2025-03-20T14:42:30.328Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.324Z][0m [32m✓ Article saved to: /Users/saar/Desktop/Development/Trendiz - V2 - New/content/articles/2025-03-20T14:42:30.272Z-why-testing-matters-more-than-ever.md[0m
+[2025-03-20T14:42:30.336Z] [DEBUG] [Testing] [2m[2025-03-20T14:42:30.324Z][0m [36m⏱ total-generation: 15.0s[0m
+[2025-03-20T14:42:30.381Z] [INFO] Rate limiting: waiting 2s before next batch...
+[2025-03-20T14:42:30.381Z] [SUCCESS] [2/3] Article generation successful for "Testing" in 15.1s
+[2025-03-20T14:42:32.388Z] [INFO] [3/3] Generating article for topic: Music (Entertainment)
+[2025-03-20T14:42:32.484Z] [DEBUG] [Music] API Key Manager: Loaded 3 Gemini API keys
+[2025-03-20T14:42:32.484Z] [DEBUG] [Music] API Key Manager: Loaded 2 Unsplash API keys
+[2025-03-20T14:42:32.484Z] [DEBUG] [Music] [44m[37m[1m START: Script Execution [0m
+[2025-03-20T14:42:32.485Z] [DEBUG] [Music] [2m[2025-03-20T14:42:32.484Z][0m [34mℹ Starting article generation script with Gemini model: gemini-1.5-flash[0m
+[2025-03-20T14:42:32.485Z] [DEBUG] [Music] [44m[37m[1m START: Article Generation [0m
+[2025-03-20T14:42:32.485Z] [DEBUG] [Music] [2m[2025-03-20T14:42:32.484Z][0m [34mℹ Topic: Music[0m
+[2025-03-20T14:42:32.485Z] [DEBUG] [Music] Generating a title for: Music
+[2025-03-20T14:42:32.485Z] [DEBUG] [Music] [2m[2025-03-20T14:42:32.485Z][0m [34mℹ Generating article for topic: "Music"[0m
+[2025-03-20T14:42:32.485Z] [DEBUG] [Music] Generated title: 4 Ways Music Is Transforming Industries
+[2025-03-20T14:42:32.486Z] [DEBUG] [Music] [2m[2025-03-20T14:42:32.485Z][0m [32m✓ Generated title: "4 Ways Music Is Transforming Industries"[0m
+[2025-03-20T14:42:32.486Z] [DEBUG] [Music] [2m[2025-03-20T14:42:32.485Z][0m [34mℹ Generated slug: "4-ways-music-is-transforming-industries"[0m
+[2025-03-20T14:42:33.485Z] [DEBUG] [Music] [2m[2025-03-20T14:42:33.485Z][0m [36m⏱ keyword-generation: 1.0s[0m
+[2025-03-20T14:42:33.485Z] [DEBUG] [Music] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T14:42:33.485Z] [DEBUG] [Music] [2m[2025-03-20T14:42:33.485Z][0m [34mℹ Generated keywords: music genres, best music streaming services, learn music online, top 10 songs 2023, how to make music, free music downloads legal, music production software, buy music online, classical music composers, live music near me[0m
+[2025-03-20T14:42:33.485Z] [DEBUG] [Music] [2m[2025-03-20T14:42:33.485Z][0m [34mℹ Searching for featured image with terms: "Music"[0m
+[2025-03-20T14:42:33.930Z] [DEBUG] [Music] [2m[2025-03-20T14:42:33.930Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwzfHxNdXNpY3xlbnwwfHx8fDE3NDI0ODE3NTN8MA&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T14:42:33.936Z] [DEBUG] [Music] [2m[2025-03-20T14:42:33.931Z][0m [36m⏱ featured-image: 446ms[0m
+[2025-03-20T14:42:33.937Z] [DEBUG] [Music] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T14:42:33.937Z] [DEBUG] [Music] [2m[2025-03-20T14:42:33.931Z][0m [34mℹ Generating categories...[0m
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] Categories text from Gemini: ```json
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] Parsed categories array: [
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] 'Audio Engineering',
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] ["Technology", "Audio Engineering", "Digital Signal Processing", "Loudness Normalization"]
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] 'Loudness Normalization'
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] ```
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] 'Digital Signal Processing',
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] 'Technology',
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] ]
+[2025-03-20T14:42:34.973Z] [DEBUG] [Music] [2m[2025-03-20T14:42:34.973Z][0m [34mℹ Sending request to Gemini API...[0m
+[2025-03-20T14:42:45.724Z] [DEBUG] [Music] [2m[2025-03-20T14:42:45.723Z][0m [32m✓ Generated content: 8663 characters[0m
+[2025-03-20T14:42:46.083Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.083Z][0m [32m✓ Successfully retrieved 10 Unsplash images for topic: Music[0m
+[2025-03-20T14:42:46.085Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.084Z][0m [34mℹ Added 4 images to the article content[0m
+[2025-03-20T14:42:46.087Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.087Z][0m [34mℹ Estimated reading time: 7 minutes[0m
+[2025-03-20T14:42:46.089Z] [DEBUG] [Music] [44m[37m[1m START: Content Validation [0m
+[2025-03-20T14:42:46.092Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.090Z][0m [32m✓ Section count is good: 10 sections[0m
+[2025-03-20T14:42:46.093Z] [DEBUG] [Music] [44m[37m[1m END: Content Validation [0m
+[2025-03-20T14:42:46.093Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.090Z][0m [34mℹ Searching for images for the article...[0m
+[2025-03-20T14:42:46.093Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.090Z][0m [34mℹ Searching for featured image with music genres, best music streaming services, learn music online...[0m
+[2025-03-20T14:42:46.094Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.090Z][0m [34mℹ Searching for featured image with terms: "Music"[0m
+[2025-03-20T14:42:46.092Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.090Z][0m [33m⚠ Content has too few images (0). Need at least 3.[0m
+[2025-03-20T14:42:46.089Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.089Z][0m [34mℹ Validating article content quality...[0m
+[2025-03-20T14:42:46.092Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.090Z][0m [33m⚠ Content is shorter than ideal (1228 words). Aim for 1500-2500 words for comprehensive coverage.[0m
+[2025-03-20T14:42:46.094Z] [DEBUG] [Music] [44m[37m[1m START: Featured Image Selection [0m
+[2025-03-20T14:42:46.142Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.141Z][0m [32m✓ Selected featured image: https://images.unsplash.com/photo-1470225620780-dba8ba36b745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MjE4ODJ8MHwxfHNlYXJjaHwxfHxNdXNpY3xlbnwwfHx8fDE3NDI0ODE3NTN8MA&ixlib=rb-4.0.3&q=80&w=1080[0m
+[2025-03-20T14:42:46.142Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.141Z][0m [36m⏱ featured-image: 51ms[0m
+[2025-03-20T14:42:46.142Z] [DEBUG] [Music] [44m[37m[1m END: Featured Image Selection [0m
+[2025-03-20T14:42:46.336Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.336Z][0m [34mℹ Replaced 0 placeholder images with actual images from Unsplash[0m
+[2025-03-20T14:42:46.343Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [32m✓ Article saved to: /Users/saar/Desktop/Development/Trendiz - V2 - New/content/articles/2025-03-20T14:42:46.336Z-4-ways-music-is-transforming-industries.md[0m
+[2025-03-20T14:42:46.344Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [36m⏱ total-generation: 13.9s[0m
+[2025-03-20T14:42:46.344Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [32m✓ Article generated successfully with Gemini in 13.86s[0m
+[2025-03-20T14:42:46.344Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [34mℹ Filename: 2025-03-20T14:42:46.336Z-4-ways-music-is-transforming-industries.md[0m
+[2025-03-20T14:42:46.344Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [34mℹ Keywords: music genres, best music streaming services, learn music online, top 10 songs 2023, how to make music, free music downloads legal, music production software, buy music online, classical music composers, live music near me[0m
+[2025-03-20T14:42:46.344Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [34mℹ Title: 4 Ways Music Is Transforming Industries[0m
+[2025-03-20T14:42:46.344Z] [DEBUG] [Music] [2m[2025-03-20T14:42:46.343Z][0m [34mℹ Social Snippet: "Did you know music is now being used to improve workplace productivity by up to 20%?  The future of work just got a whole lot more melodic."[0m
+[2025-03-20T14:42:46.365Z] [SUCCESS] [3/3] Article generation successful for "Music" in 14.0s
+[2025-03-20T14:42:46.368Z] [INFO] Results saved to /Users/saar/Desktop/Development/Trendiz - V2 - New/logs/generation-results-2025-03-20.json
